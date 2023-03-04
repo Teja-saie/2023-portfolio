@@ -5,6 +5,7 @@ import axios from 'axios';
 const Resume = () => {
   const inputRef=React.useRef<null | HTMLInputElement>(null)
   const [Data, setData] = React.useState<Blob | null>(null)
+  const [UploadProgress, setUploadProgress] = React.useState<String | Number>(0)
 
   function FileUpload(e:React.ChangeEvent<HTMLInputElement>){
     console.log(e.target.files)
@@ -17,7 +18,8 @@ const Resume = () => {
     let formData = new FormData()
     if(Data!=null && inputRef.current!=null){
     formData.append("file", Data);
-    axios.post(url,formData,{headers: {"Content-Type": "multipart/form-data"}}).catch(err=>console.log(err))
+    axios.post(url,formData,{headers: {"Content-Type": "multipart/form-data"},onUploadProgress: progressEvent => { var { loaded, total=0 } = progressEvent;
+    let percent = Math.floor((loaded * 100) / total);setUploadProgress(percent)}}).catch(err=>console.log(err))
     setData(null);
     inputRef.current.value="";
   }
@@ -29,6 +31,7 @@ const Resume = () => {
         <input type="file" onChange={FileUpload} accept=".jpg, .jpeg, .png,.txt,.pdf,video/*" ref={inputRef}/>
         <input type="submit"></input>
       </form>
+      <div>Upload Progress: {UploadProgress}</div>
     </div>
   )
 }
