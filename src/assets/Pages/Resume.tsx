@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div>Resume</div>
+    <div><h1>Resume Download Feature Goes Here</h1></div>
   )
 }
 
