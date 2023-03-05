@@ -31,7 +31,7 @@ const Resume = () => {
         <input type="file" onChange={FileUpload} accept=".jpg, .jpeg, .png,.txt,.pdf,video/*" ref={inputRef}/>
         <input type="submit"></input>
       </form>
-      <div>Upload Progress: {UploadProgress}</div>
+      <>Upload progress is {UploadProgress}</>
     </div>
   )
 }
