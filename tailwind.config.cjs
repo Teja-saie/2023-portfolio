@@ -13,7 +13,16 @@ module.exports = {
         'fourth':'#F1E1D9',
         'fifth':'#C6D8D3',
       },
+      keyframes: {
+        fadein: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
     },
+    animation: {
+      fade: 'fadein 1s ease-in-out',
+    }
+   },
   },
   plugins: [],
 }
