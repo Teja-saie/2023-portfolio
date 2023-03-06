@@ -2,24 +2,18 @@ import React from "react";
 import axios from "axios";
 
 const Resume = () => {
-  const inputRef = React.useRef<null | HTMLInputElement>(null);
-  const [Data, setData] = React.useState<Blob | null>(null);
+  const [Data, setData] = React.useState<File[]| FileList | null>(null);
+  const inputRef=React.useRef<HTMLInputElement | null>(null)
   const [UploadProgress, setUploadProgress] = React.useState<String | Number>(
     0
   );
-
-  function FileUpload(e: React.ChangeEvent<HTMLInputElement>) {
-    console.log(e.target.files);
-    if (e.target.files) {
-      setData(e.target.files[0]);
-    }
-  }
-  function handleChange(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  function handleChange() {
     let url = "http://localhost:3004/data";
     let formData = new FormData();
-    if (Data != null && inputRef.current != null) {
-      formData.append("file", Data);
+      if(Data!=null && Data.length>0){
+        for (let i = 0; i < Data?.length; i++) {
+          formData.append('files', Data[i]);
+        }
       axios
         .post(url, formData, {
           headers: { "Content-Type": "multipart/form-data" },
@@ -29,46 +23,31 @@ const Resume = () => {
             setUploadProgress(percent);
           },
         })
+        .then(data=>console.log("Uploaded files"))
         .catch((err) => console.log(err));
       setData(null);
-      inputRef.current.value = "";
     }
   }
   return (
     <div>
       <h1>Resume Download Feature Goes Here</h1>
       <div
-        className="h-[200px] border-2 border-sky-500"
+        onClick={e=>{inputRef.current!=null && inputRef.current.click()}}
+        className="flex h-[200px] border-2 border-sky-500 w-[75%]"
         onDragOver={(e) => e.preventDefault()}
         onDrop={(e) => {
           e.preventDefault();
           setData(e.dataTransfer.files);
-        }}
-      >
-        <button
-          onClick={() => {
-            let formData = new FormData();
-            console.log(Data);
-            for (let i = 0; i < Data.length; i++) {
-              formData.append('files', Data[i]);
-            }
-            axios.post("http://localhost:3004/data", formData, {
-              headers: { "Content-Type": "multipart/form-data" },
-            });
-          }}
-        >
+          console.log(e.dataTransfer.files,Data)
+        }}>
+        <input type="file" multiple ref={inputRef} hidden onChange={(e) => {e.preventDefault();console.log(e);setData(e.target.files)}}></input>
+        <p>Drag and Drop files or Click here to Select Files</p>
+    </div>
+      <p>{Data!=null &&  Array.from(Data).map(file => {return <span className="block" key={file.name}>{file.name}</span>})}</p>
+        <button onClick={handleChange} className="bg-red-400 text-white text-xl rounded-lg p-4">
           Upload files
         </button>
-      </div>
-      <form onSubmit={handleChange}>
-        <input
-          type="file"
-          onChange={FileUpload}
-          accept=".jpg, .jpeg, .png,.txt,.pdf,video/*"
-          ref={inputRef}
-        />
-        <input type="submit"></input>
-      </form>
+
       <>Upload progress is {UploadProgress}</>
     </div>
   );
