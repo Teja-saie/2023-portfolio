@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   const [Data, setData] = React.useState<File[]| FileList | null>(null);
@@ -29,7 +30,10 @@ const Resume = () => {
     }
   }
   return (
-    <div className="flex flex-col justify-center items-center">
+    <motion.div initial={{ opacity: 0}}
+    animate={{ opacity: 1}}
+    exit={{ opacity: 0}}
+    transition={{ duration: 2 }} className="flex flex-col justify-center items-center">
       <h1 className="pb-8 text-4xl text-red-500">Resume Download Feature Goes Here</h1>
       <div
         onClick={e=>{inputRef.current!=null && inputRef.current.click()}}
@@ -48,7 +52,7 @@ const Resume = () => {
           Upload files
         </button>
       <>Upload progress is {UploadProgress}</>
-    </div>
+    </motion.div>
   );
 };
 

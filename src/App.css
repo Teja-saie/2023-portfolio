@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body{
+    background-image: url(https://static.videezy.com/system/resources/thumbnails/000/048/028/original/20200316_Fire-Particle-with-Black-BG.jpg)!important;
+    background-size: cover;
+}

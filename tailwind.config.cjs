@@ -7,11 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "first":"#FFE5D9",
-        'second':'#F9D9C9',
-        'third':'#E8C6B7',
-        'fourth':'#F1E1D9',
-        'fifth':'#C6D8D3',
+        "Main_black":"#191825",
+        'second_blue':'#865DFF',
+        'third':'#E384FF',
+        'fourth':'#FFA3FD',
+        'fifth':'#E9E8E8',
+        'glassmorph':" rgba( 255, 255, 255, 0.1 )"
       },
       keyframes: {
         fadein: {
