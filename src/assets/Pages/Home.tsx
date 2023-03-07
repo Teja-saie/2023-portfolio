@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ActionAreaCard from "../Components/Card";
 import { ScrollContainer } from 'react-indiana-drag-scroll';
 import 'react-indiana-drag-scroll/dist/style.css'
+import Loader from "../Components/Loader";
 
 const Home = () => {
   return (
