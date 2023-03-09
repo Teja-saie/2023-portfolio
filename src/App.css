@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+/* body{
     background-image: url(https://static.videezy.com/system/resources/thumbnails/000/048/028/original/20200316_Fire-Particle-with-Black-BG.jpg)!important;
     background-size: cover;
+} */
+body{
+    background-color: black;
 }
+/* .react-multiple-carousel__arrow--left{
+ background-color: red!important;
+ left: calc(-4%+1px)!important;
+ z-index: 99999!important;
+} */
+.react-multi-carousel-list{position: unset !important;}
+
+.slider-track li{display: flex;justify-content: center!important;}
