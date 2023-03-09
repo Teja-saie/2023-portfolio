@@ -16,3 +16,48 @@ body{
 .react-multi-carousel-list{position: unset !important;}
 
 .slider-track li{display: flex;justify-content: center!important;}
+label{color: white;}
+
+h1,h2,h3{
+    font-family: cursive;
+}
+
+.banner h1 {
+    /* position: absolute; */
+    font-family: sans-serif;
+    font-size: 40px;
+    letter-spacing: 8px;
+    color: rgb(230,255,255);
+    text-shadow: 2px 2px 8px rgb(206, 206, 206);
+    animation: color-cycle 5s infinite ease-in-out;
+    color: rgb(233, 233, 233);
+    text-transform: uppercase;
+    margin-top: -14px;
+    text-align: center;
+    width: 90%;
+}
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+/* DEMO-SPECIFIC STYLES */
+.typewriter{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    /* white-space: nowrap; */
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  

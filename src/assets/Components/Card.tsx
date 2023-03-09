@@ -27,22 +27,23 @@ export default function Cards() {
     <h2 className="font-extrabold text-6xl py-4 text-fifth">
             Tech Stack I Worked On
           </h2>
-<Carousel className='slider-track w-4/5 h-[400px] grid place-content-center text-center'
+<Carousel className='slider-track w-4/5 h-[400px] grid place-content-center text-center cursor-grabbing'
   swipeable={true}
   draggable={true}
   showDots={false}
   responsive={responsive}
+  renderArrowsWhenDisabled={true}
   infinite={true}
   autoPlay={true}
-  autoPlaySpeed={2000}
+  autoPlaySpeed={5000}
   keyBoardControl={true}
-  customTransition="all .5"
-  transitionDuration={500}
+  customTransition="all 5s"
+  transitionDuration={4000}
   dotListClass="custom-dot-list-style"
   containerClass="carousel-container"
 >
 {Object.keys(images).map((imageName) => (
-          <img key={imageName} src={images[imageName].default} className="w-3/4 object-scale-down bg-center h-[200px] rounded-lg max-h-[200px]"/>
+          <div key={imageName} className='bg-red'><img key={imageName} src={images[imageName].default} className="w-3/4 object-scale-down bg-center h-[200px] rounded-lg max-h-[200px]"/></div>
         ))}
 </Carousel>
 </>

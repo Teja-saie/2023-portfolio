@@ -1,14 +1,15 @@
 import React from 'react'
 import Banner from "../images/Banner.jpg";
+import image from "../images/new.webp";
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col lg:flex-row bg-opacity-10 backdrop-filter backdrop-blur-lg p-4">
+    <div className="flex flex-col lg:flex-row bg-opacity-10 backdrop-filter backdrop-blur-lg p-4 flex-wrap">
         <div className="lg:w-1/2 p-10 h-full">
           <h2 className="font-extrabold text-6xl py-4 text-fifth">
             About Me
           </h2>
-          <p className="text-white">
+          <p className="text-white ">
             <span className="block pt-3">
               Welcome to my portfolio! As a web developer, I have experience in
               designing and developing websites that are both visually appealing
@@ -50,8 +51,8 @@ const AboutSection = () => {
             </span>
           </p>
         </div>
-        <div className="lg:w-1/2 right-0 justify-center flex">
-          <img className="h-full" src={Banner} />
+        <div className="lg:w-1/2 right-0 justify-center items-center flex">
+          <img className="bg-auto h-4/5 " src={image} />
         </div>
       </div>
   )

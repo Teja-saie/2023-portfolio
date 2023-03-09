@@ -10,7 +10,7 @@ import { useEffect,useState } from 'react'
 
 function App() {
   const [showLoader, setshowLoader] = useState<Boolean>(true)
-  useEffect(()=>{setTimeout(()=>setshowLoader(false),1400)},[])
+  useEffect(()=>{setTimeout(()=>setshowLoader(false),1200)},[])
 
   return (
     <div className="App">
