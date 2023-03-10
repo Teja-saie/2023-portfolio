@@ -1,24 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* body{
-    background-image: url(https://static.videezy.com/system/resources/thumbnails/000/048/028/original/20200316_Fire-Particle-with-Black-BG.jpg)!important;
-    background-size: cover;
-} */
 body{
     background-color: black;
 }
-/* .react-multiple-carousel__arrow--left{
- background-color: red!important;
- left: calc(-4%+1px)!important;
- z-index: 99999!important;
-} */
 .react-multi-carousel-list{position: unset !important;}
 
 .slider-track li{display: flex;justify-content: center!important;}
 label{color: white;}
 
-h1,h2,h3{
+h1,h2,h3,.cursivet{
     font-family: cursive;
 }
 
@@ -59,5 +50,4 @@ h1,h2,h3{
     animation: typing 3.5s steps(30, end),
       blink-caret .5s step-end infinite;
   }
-  
   

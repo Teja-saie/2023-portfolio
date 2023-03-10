@@ -27,7 +27,7 @@ export default function Cards() {
     <h2 className="font-extrabold text-6xl py-4 text-fifth">
             Tech Stack I Worked On
           </h2>
-<Carousel className='slider-track w-4/5 h-[400px] grid place-content-center text-center cursor-grabbing'
+<Carousel className='slider-track w-4/5 h-[400px] grid place-content-center text-center cursor-none'
   swipeable={true}
   draggable={true}
   showDots={false}

@@ -3,20 +3,18 @@ import React from 'react';
 interface Props {
   Prop1: React.ComponentType<any>;
   Prop2: React.ComponentType<any>;
-  Title:string
+  Title?:string
 }
 
 const Flex = ({ Prop1, Prop2,Title }: Props) => {
   return (
     <>
-          <h2 className='text-white'>{Title}</h2>
-    <div className="flex flex-wrap justify-center items-center w-screen">
-
-      <div className="flex-1 flex justify-center">
-      <Prop1 />
+    <div className="flex flex-wrap justify-center items-center w-full lg:w-screen md:mb-4 sm:mb-3 mt-[20px]">
+      <div className="lg:w-1/2 sm:w-full md:w-full  mb-[15px]">
+        <Prop1 />
       </div>
-      <div className="flex-1 flex justify-center">
-      <Prop2 />
+      <div className="lg:w-1/2 flex sm:w-full md:w-full justify-center mb-[15px]">
+        <Prop2 />
       </div>
     </div>
     </>

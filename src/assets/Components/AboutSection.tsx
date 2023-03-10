@@ -1,8 +1,7 @@
-import React from 'react'
-import Banner from "../images/Banner.jpg";
 import image from "../images/new.webp";
 
-const AboutSection = () => {
+function AboutSection(){
+
   return (
     <div className="flex flex-col lg:flex-row bg-opacity-10 backdrop-filter backdrop-blur-lg p-4 flex-wrap">
         <div className="lg:w-1/2 p-10 h-full">

@@ -25,8 +25,13 @@ module.exports = {
     },
     backgroundImage: {
       'hero-pattern': "url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80')",
-    }
+    },
+    extend: {
+			fontFamily: {
+				cursivet: ['cursive'],
+			},
    },
+  }
   },
   plugins: [],
 }

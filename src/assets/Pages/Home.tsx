@@ -7,6 +7,7 @@ import ContactForm from "../Components/Forms";
 import Footer from "../Components/Footer";
 import Faq from "../Components/Faq";
 import FlexHoc from "../HOC/Flex";
+import Projects from "../Components/Projects";
 
 const Home = () => {
 
@@ -41,13 +42,13 @@ const Home = () => {
     exit="out"
     variants={pageVariants}
     transition={pageTransition}
-      className="items-center flex flex-col"
+    className="items-center flex flex-col"
     >
     <BannerSection/>
     <AboutSection />  
     <Cards />
-    <FlexHoc Prop1={Faq} Prop2={ContactForm} Title="FAQ and My Projects"></FlexHoc>
-    {/* <FlexHoc Prop1={ContactForm} Prop2={ContactForm}></FlexHoc> */}
+    <FlexHoc Prop1={Faq} Prop2={ContactForm}></FlexHoc>
+    <FlexHoc Prop1={Projects} Prop2={Faq} ></FlexHoc>
     <Footer/>
     </motion.div>
   );
