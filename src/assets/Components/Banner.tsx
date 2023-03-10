@@ -25,11 +25,11 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className='bg-hero-pattern bg-no-repeat bg-cover w-screen text-white h-[90vh] overflow-hidden grid place-content-center'>
-      <div ref={bannerRef} className='banner bg-glassmorph rounded-2xl h-[80vh] w-[80vw] flex justify-center flex-col items-center'>
-        <h1 className='text-3xl text-white'>Hello welcome to my website</h1>
+    <div className='bg-hero-pattern bg-no-repeat bg-cover w-screen md:w-screen text-white h-[90vh] overflow-hidden grid place-content-center'>
+      <div ref={bannerRef} className='banner rounded-2xl h-[80vh] w-[80vw] flex justify-center flex-col items-center'>
+        <h1 className='text-4xl text-white'>Hi, I'm <span className='font-extrabold'>Teja</span></h1>
         <p className='my-2 text-2xl font-semibold'>I am a <Typewriter texts={['Full Stack Developer','React JS Developer', 'Frontend Developer', 'Mern Stack Developer']} /></p>
-        <Link to="/contact" className='border-2 border-third p-2 rounder-lg w-[100px] m-3 hover:bg-third hover:text-black font-semibold transition ease-in-out rounded-lg'>Contact us</Link>
+        <Link to="/contact" className='text-center border-2 border-third p-2 rounder-lg w-[150px] m-3 hover:bg-third hover:text-black font-semibold transition ease-in-out rounded-lg'>Contact Me</Link>
       </div>
     </div>
   )

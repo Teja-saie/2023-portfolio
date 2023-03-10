@@ -12,7 +12,7 @@ const Menu = ({isOpen, setIsOpen}:props) => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className={isOpen?"bg-black sticky top-0 z-30":"sticky top-0 z-30"}>
+    <div className={isOpen?"bg-transparent top-0 z-30":"sticky top-0 z-30"}>
       <nav className="flex space-x-4 w-[99vw] h-10 justify-between items-center p-10 backdrop-blur-xl bg-opacity-60">
         <div className="logo w-1/2 font-bold text-fourth items-center flex text-[42px] italic"><Link to={"/"}>Teja</Link> </div>
         <div className="change here ">

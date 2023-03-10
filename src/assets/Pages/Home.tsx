@@ -8,6 +8,7 @@ import Footer from "../Components/Footer";
 import Faq from "../Components/Faq";
 import FlexHoc from "../HOC/Flex";
 import Projects from "../Components/Projects";
+import Socialmedia from "../Components/Socialmedia";
 
 const Home = () => {
 
@@ -47,8 +48,8 @@ const Home = () => {
     <BannerSection/>
     <AboutSection />  
     <Cards />
-    <FlexHoc Prop1={Faq} Prop2={ContactForm}></FlexHoc>
-    <FlexHoc Prop1={Projects} Prop2={Faq} ></FlexHoc>
+    <FlexHoc Prop1={Faq} Prop2={Projects}></FlexHoc>
+    <FlexHoc Prop1={ContactForm} Prop2={Socialmedia} ></FlexHoc>
     <Footer/>
     </motion.div>
   );

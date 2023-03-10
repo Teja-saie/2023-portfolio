@@ -1,4 +1,5 @@
-import image from "../images/new.webp";
+// import image from "../images/new.webp";
+import image from "../images/sidebar-image.svg";
 
 function AboutSection(){
 

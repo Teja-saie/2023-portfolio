@@ -76,8 +76,8 @@ Fill out the form below to get in touch with us, and we'll get back to you as so
             <div className='flex items-center justify-center'>
               <button
                 type="submit"
-                disabled={state.submitting}
-                className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+                disabled={state.submitting} 
+                className='bg-third hover:bg-fourth text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
               >
                 Submit
               </button>
