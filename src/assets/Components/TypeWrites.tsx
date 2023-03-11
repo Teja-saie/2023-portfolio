@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 type prop={
-  texts:string,
+  texts:string[],
 }
 
 export default function Typewriter({ texts }:prop) {
