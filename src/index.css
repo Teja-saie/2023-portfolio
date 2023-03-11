@@ -4,7 +4,9 @@
 
 
 body{cursor: none!important;}
-
+@media(max-width:978px){
+  .cursor{display: none!important;}
+}
 .cursor {
     position: fixed;
     top: 0;
