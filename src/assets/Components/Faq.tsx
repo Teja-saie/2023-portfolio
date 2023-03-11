@@ -7,15 +7,15 @@ const Faq = () => {
       <div className="w-full max-w-md">
         <MyAccordion
           title="First Accordion is very good accordion i am very happy using it now thanks "
-          content={<p>First Accordion Content</p>}
+          content="First Accordion Content"
         />
         <MyAccordion
           title="Second Accordion"
-          content={<p>Second Accordion Content</p>}
+          content="Second Accordion Content"
         />
         <MyAccordion
           title="Third Accordion"
-          content={<p>Third Accordion Content</p>}
+          content="Third Accordion Content"
         />
       </div>
     </div>

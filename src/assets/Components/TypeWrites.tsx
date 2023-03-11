@@ -1,6 +1,10 @@
 import { useState, useEffect } from "react";
 
-export default function Typewriter({ texts }) {
+type prop={
+  texts:string,
+}
+
+export default function Typewriter({ texts }:prop) {
   const [index, setIndex] = useState(0);
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
