@@ -4,7 +4,6 @@ import AboutSection from "../Components/AboutSection";
 import { motion } from "framer-motion";
 import Cards from "../Components/Card";
 import ContactForm from "../Components/Forms";
-import Footer from "../Components/Footer";
 import Faq from "../Components/Faq";
 import FlexHoc from "../HOC/Flex";
 import Projects from "../Components/Projects";
@@ -50,7 +49,6 @@ const Home = () => {
       <Cards />
       <FlexHoc Prop1={Projects} Prop2={Faq}></FlexHoc>
       <FlexHoc Prop1={Socialmedia} Prop2={ContactForm} ></FlexHoc>
-      <Footer/>
     </motion.div>
   );
 };

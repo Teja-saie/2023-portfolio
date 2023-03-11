@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaLinkedinIn,FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn,FaGithub, FaInstagram ,FaPhone} from 'react-icons/fa';
 
 
 
@@ -48,9 +48,10 @@ const Hamberger = ({ isOpen, setIsOpen }: props) => {
             Contact
           </NavLink>
           <div className="flex font-medium text-lg justify-around gap-2">
-            <Link to="#" className="hover:bg-third p-2 rounded-full" target="_blank"><FaLinkedinIn/></Link>
-            <Link to="#" className="hover:bg-third p-2 rounded-full" target="_blank"><FaGithub/></Link>
-            <Link to="#" className="hover:bg-third p-2 rounded-full" target="_blank"><FaInstagram/></Link>
+            <Link to="https://www.linkedin.com/in/teja-venkat-sai-657746204/" className="hover:bg-third p-2 rounded-full" target="_blank"><FaLinkedinIn/></Link>
+            <Link to="https://github.com/Teja-saie" className="hover:bg-third p-2 rounded-full" target="_blank"><FaGithub/></Link>
+            <Link to="https://www.instagram.com/teja__sai___/" className="hover:bg-third p-2 rounded-full" target="_blank"><FaInstagram/></Link>
+            <Link to="tel:+91-9581111727" className="hover:bg-third p-2 rounded-full  text-white" target="_blank"><FaPhone/></Link>
           </div>
         </div>
     </motion.div>}

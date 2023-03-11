@@ -52,7 +52,7 @@ function AboutSection(){
           </p>
         </div>
         <div className="lg:w-1/2 right-0 justify-center items-center flex">
-          <img className="bg-auto h-4/5 " src={image} />
+          <img className="bg-auto h-4/5" src={image} />
         </div>
       </div>
   )
