@@ -48,8 +48,8 @@ const Home = () => {
       <BannerSection/>
       <AboutSection />  
       <Cards />
-      <FlexHoc Prop1={Faq} Prop2={Projects}></FlexHoc>
-      <FlexHoc Prop1={ContactForm} Prop2={Socialmedia} ></FlexHoc>
+      <FlexHoc Prop1={Projects} Prop2={Faq}></FlexHoc>
+      <FlexHoc Prop1={Socialmedia} Prop2={ContactForm} ></FlexHoc>
       <Footer/>
     </motion.div>
   );
