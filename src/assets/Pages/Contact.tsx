@@ -48,7 +48,6 @@ Fill out the form below to get in touch with us, and we'll get back to you as so
                 type="tel" 
                 maxLength={10}
                 name="phone"
-                pattern="[0-9]{2}-[0-9]{3}"
                 required
                 className='shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-100'
               />
