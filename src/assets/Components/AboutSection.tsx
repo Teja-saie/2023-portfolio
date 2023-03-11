@@ -4,7 +4,7 @@ import image from "../images/sidebar-image.svg";
 function AboutSection(){
 
   return (
-    <div className="flex flex-col lg:flex-row bg-opacity-10 backdrop-filter backdrop-blur-lg p-4 flex-wrap">
+    <div className="flex flex-col lg:flex-row bg-opacity-10 backdrop-filter backdrop-blur-lg p-4 flex-wrap snap-start">
         <div className="lg:w-1/2 p-10 h-full">
           <h2 className="font-extrabold text-6xl py-4 text-fifth">
             About Me

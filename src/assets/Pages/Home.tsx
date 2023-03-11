@@ -45,12 +45,12 @@ const Home = () => {
     transition={pageTransition}
     className="items-center flex flex-col"
     >
-    <BannerSection/>
-    <AboutSection />  
-    <Cards />
-    <FlexHoc Prop1={Faq} Prop2={Projects}></FlexHoc>
-    <FlexHoc Prop1={ContactForm} Prop2={Socialmedia} ></FlexHoc>
-    <Footer/>
+      <BannerSection/>
+      <AboutSection />  
+      <Cards />
+      <FlexHoc Prop1={Faq} Prop2={Projects}></FlexHoc>
+      <FlexHoc Prop1={ContactForm} Prop2={Socialmedia} ></FlexHoc>
+      <Footer/>
     </motion.div>
   );
 };

@@ -1,51 +1,33 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React from 'react'
+import Carousel from "nuka-carousel";
+import {AiOutlineCaretLeft,AiOutlineCaretRight} from "react-icons/ai"
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2 // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1 // optional, default to 1.
-  }
-};
-
-
-export default function Cards() {
+const Card = () => {
   const images = import.meta.globEager('../logos/*.{png,jpg,jpeg,svg}');
-  return (
-    <>
-    <h2 className="font-extrabold text-6xl py-4 text-fifth">
-            Tech Stack I Worked On
-          </h2>
-<Carousel className='slider-track w-4/5 h-[400px] grid place-content-center text-center cursor-none'
-  swipeable={true}
-  draggable={true}
-  showDots={false}
-  responsive={responsive}
-  renderArrowsWhenDisabled={true}
-  infinite={true}
-  autoPlay={true}
-  autoPlaySpeed={5000}
-  keyBoardControl={true}
-  customTransition="all 5s"
-  transitionDuration={4000}
-  dotListClass="custom-dot-list-style"
-  containerClass="carousel-container"
->
-{Object.keys(images).map((imageName) => (
-          <div key={imageName} className='bg-red'><img key={imageName} src={images[imageName].default} className="w-3/4 object-scale-down bg-center h-[200px] rounded-lg max-h-[200px]"/></div>
+    return (
+      <div className='snap-start slider-container_t'>
+      <Carousel
+        autoplay={true}
+        slidesToShow={4}
+        autoplayInterval={4000}
+        wrapAround={true}
+        dragging={true}
+        renderCenterLeftControls={({ previousSlide }) => (
+          <button onClick={previousSlide}>
+           <AiOutlineCaretLeft className='text-white'/>
+          </button>
+        )}
+        renderCenterRightControls={({ nextSlide }) => (
+          <button onClick={nextSlide}>
+           <AiOutlineCaretRight className='text-white'/>
+          </button>
+        )}
+      >
+        {Object.keys(images).map((imageName) => (
+          <div key={imageName} className='bg-red flex items-center justify-center'><img key={imageName} src={images[imageName].default} className="w-3/4 object-scale-down bg-center h-[200px] rounded-lg max-h-[200px]"/></div>
         ))}
-</Carousel>
-</>
-  );
-}
+      </Carousel>
+      </div>
+    );
+  };  
+export default Card;

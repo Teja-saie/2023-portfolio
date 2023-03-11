@@ -31,10 +31,10 @@ const Projects = () => {
       {projectsData.map((item) => (
         <div
           key={item.title}
-          className="bg-white text-center px-3 py-4 h-full rounded-3xl w-full flex flex-col justify-center"
+          className="text-white text-center px-3 py-4 h-full rounded-3xl w-full flex flex-col justify-center"
         >
-          <h1 className="text-3xl text-zinc-900 pb-5">{item.title}</h1>
-          <p className="text-clip  text-amber-800">{item.role}</p>
+          <h1 className="text-3xl text-third pb-5">{item.title}</h1>
+          <p className="text-clip  text-white">{item.role}</p>
         </div>
       ))}
     </Carousel>

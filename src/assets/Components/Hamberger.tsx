@@ -15,7 +15,7 @@ const Hamberger = ({ isOpen, setIsOpen }: props) => {
     <AnimatePresence>
     {isOpen && <motion.div initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -50 }} className={!isOpen?"fixed top-0 left-0 h-screen w-screen":"fixed z-50"}>
+          exit={{ opacity: 0, x: -50 }} className={!isOpen?"fixed top-0 left-0 h-screen w-screen":"fixed z-40"}>
         <div onClick={()=>setIsOpen(false)} className="z-50 flex flex-col h-screen w-screen bg-black text-[30px] tracking-widest text-white justify-center items-center gap-4 cursivet">
           <NavLink
             to="/"
