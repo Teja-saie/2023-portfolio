@@ -5,7 +5,7 @@ const Projects = () => {
   const projectsData = [
     {
       title: "Dashboard",
-      role: "Dorothy Orem was a nursing theorist who developed the Self-Care Deficit Theory. This theory posits that individuals have a natural desire to care for themselves, but may require assistance in doing so if they are unable to meet their own self-care needs. According to Orem, nursing should aim to facilitate the individual's ability to engage in self-care, and should provide the necessary support to help them do so.Orem's theory is based ",
+      role:"Developing new features and mainting exising code base which is developed using MERN stack, I have also worked on Node js and ongoose in this project"
     },
     {
       title: "Analytics",

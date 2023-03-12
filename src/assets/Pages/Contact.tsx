@@ -32,8 +32,8 @@ export default function ContactForm() {
           you as soon as possible. We look forward to hearing from you!
         </p>
         <div className="py-1">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="shadow-md rounded px-8 pt-6 pb-8 mb-4">
+          <div className="lg:max-w-4xl sm:w-full md:w-full lg:mx-auto px-4">
+            <div className="shadow-md rounded pt-6 pb-8 mb-4">
               <form onSubmit={handleSubmit} className="mx-auto max-w-md">
                 <div className="mb-4">
                   <label

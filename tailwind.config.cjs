@@ -24,7 +24,7 @@ module.exports = {
       fade: 'fadein 1s ease-in-out',
     },
     backgroundImage: {
-      'hero-pattern': "url('https://gatsby-otto.netlify.app/static/42f70dab47cd59addb50ba1c5245ad3b/034af/mesh.png')",
+      'hero-pattern': "url('../src/assets/images/mesh.png')",
     },
     extend: {
 			fontFamily: {
