@@ -6,7 +6,7 @@ const generateSitemap = async () => {
   const baseURL = 'https://teja-portfolio-2023.netlify.app/';
 
   // Set the output path for the sitemap file
-  const outputPath = './sitemap.xml';
+  const outputPath = './public/sitemap.xml';
 
   // Create a sitemap generator
   const generator = SitemapGenerator(baseURL, {
