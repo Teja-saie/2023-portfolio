@@ -1,1 +1,3 @@
+# Redirect all paths except specific ones to /index.html
 /*  /index.html  200
+!/*.xml /index.html 200
