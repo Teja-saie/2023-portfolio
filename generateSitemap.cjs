@@ -16,6 +16,10 @@ const generateSitemap = async () => {
   // Register the routes to be included in the sitemap
   generator.on('done', () => {
     console.log('Sitemap generated successfully.');
+
+    // Set content-type for the generated sitemap.xml
+    const sitemapContent = fs.readFileSync(outputPath, 'utf-8');
+    fs.writeFileSync(outputPath, sitemapContent, 'utf-8');
   });
 
   // Start the sitemap generation process
