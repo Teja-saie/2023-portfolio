@@ -17,9 +17,13 @@ const generateSitemap = async () => {
   generator.on('done', () => {
     console.log('Sitemap generated successfully.');
 
-    // Set content-type for the generated sitemap.xml
-    const sitemapContent = fs.readFileSync(outputPath, 'utf-8');
-    fs.writeFileSync(outputPath, sitemapContent, 'utf-8');
+    // Check if the file exists before attempting to read its content
+    if (fs.existsSync(outputPath)) {
+      const sitemapContent = fs.readFileSync(outputPath, 'utf-8');
+      console.log('Sitemap content:', sitemapContent);
+    } else {
+      console.error('Sitemap file does not exist.');
+    }
   });
 
   // Start the sitemap generation process
