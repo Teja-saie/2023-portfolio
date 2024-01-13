@@ -1,6 +1,5 @@
-// generateSitemap.js
-const SitemapGenerator = require('sitemap-generator');
-const fs = require('fs');
+import SitemapGenerator from 'sitemap-generator';
+import fs from 'fs';
 
 const generateSitemap = async () => {
   // Set your website URL

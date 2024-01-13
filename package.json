@@ -5,10 +5,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "node generateSitemap.js && npm run build",
-    "deploy": "node generateSitemap.js && gh-pages -d build",
+    "predeploy": "node generateSitemap.cjs && npm run build",
+    "deploy": "node generateSitemap.cjs && gh-pages -d build",
     "dev": "vite",
-    "build": "node generateSitemap.js && tsc && vite build",
+    "build": "node generateSitemap.cjs && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

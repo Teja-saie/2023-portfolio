@@ -9,6 +9,7 @@ import Loader from './assets/Components/Loader'
 import { useEffect,useState } from 'react'
 import Hamberger from './assets/Components/Hamberger'
 import Footer from './assets/Components/Footer'
+import {ErrorPage} from "./ErrorPage"
 
 function App() {
   const [showLoader, setshowLoader] = useState<Boolean>(true)
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/resume' element={<Resume/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer/>
       </motion.div>
