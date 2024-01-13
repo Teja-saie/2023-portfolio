@@ -1,4 +1,3 @@
-// generateSitemap.js
 const SitemapGenerator = require('sitemap-generator');
 const fs = require('fs');
 
