@@ -50,7 +50,6 @@ const Hamberger = ({ isOpen, setIsOpen }: props) => {
           <div className="flex font-medium text-lg justify-around gap-2">
             <Link to="https://www.linkedin.com/in/teja-venkat-sai-657746204/" className="hover:bg-third p-2 rounded-full" target="_blank"><FaLinkedinIn/></Link>
             <Link to="https://github.com/Teja-saie" className="hover:bg-third p-2 rounded-full" target="_blank"><FaGithub/></Link>
-            <Link to="https://www.instagram.com/teja__sai___/" className="hover:bg-third p-2 rounded-full" target="_blank"><FaInstagram/></Link>
             <Link to="tel:+91-9581111727" className="hover:bg-third p-2 rounded-full  text-white" target="_blank"><FaPhone/></Link>
           </div>
         </div>
