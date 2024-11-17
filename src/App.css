@@ -76,6 +76,6 @@ scroll-behavior: smooth;
   display: flex;
   justify-content: center;
 }
-.app{
+.App{
   overflow-x: hidden!important;
 }
