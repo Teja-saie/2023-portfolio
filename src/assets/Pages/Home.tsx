@@ -46,7 +46,7 @@ const Home = () => {
     >
       <BannerSection/>
       <AboutSection />  
-      <Cards />
+      {/* <Cards /> */}
       <FlexHoc Prop1={Projects} Prop2={Faq}></FlexHoc>
       <FlexHoc Prop1={Socialmedia} Prop2={ContactForm} ></FlexHoc>
     </motion.div>
