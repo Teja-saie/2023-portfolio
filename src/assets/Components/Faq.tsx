@@ -11,11 +11,7 @@ const Faq = () => {
         />
         <MyAccordion
           title="What experience do you have with the MERN stack?"
-          content="I have 2 years of experience working with the MERN stack, during which I have built various applications. My experience with each of the technologies in the MERN stack has allowed me to create scalable, efficient, and responsive applications that meet or exceed customer expectations"
-        />
-        <MyAccordion
-          title="How do you stay up to date with the latest trends and technologies in web development?"
-          content="I stay up to date with the latest trends and technologies in web development by attending conferences, participating in online forums and webinars, reading blogs, and experimenting with new tools and frameworks. I also enjoy collaborating with other developers and learning from their experiences, which has helped me stay current with industry best practices."
+          content="I have 4 years of experience working with the MERN stack, during which I have built various applications. My experience with each of the technologies in the MERN stack has allowed me to create scalable, efficient, and responsive applications that meet or exceed customer expectations"
         />
       </div>
     </div>

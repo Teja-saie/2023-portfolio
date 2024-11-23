@@ -1,4 +1,3 @@
-import React from 'react';
 import Carousel from "nuka-carousel";
 import { AiOutlineCaretLeft, AiOutlineCaretRight } from "react-icons/ai";
 

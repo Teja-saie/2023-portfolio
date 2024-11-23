@@ -16,10 +16,10 @@ function AboutSection(){
               and functional. My approach to web development involves a
               combination of technical expertise and creative problem-solving
               skills, which allows me to deliver high-quality results that meet
-              the needs of my clients. My skillset includes proficiency in HTML,
-              CSS, JavaScript, jQuery, Typescript and React js. I have
+              the needs of my clients. My skillset includes proficiency in React JS, Node JS, HTML,
+              CSS, JavaScript, jQuery, Typescript. I have
               experience building websites from scratch as well as working on
-              node js backend.        
+              node js backend.      
             </span>
             <span className="block pt-3">
               Additionally, I am knowledgeable about responsive design and

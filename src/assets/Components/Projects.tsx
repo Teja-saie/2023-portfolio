@@ -1,4 +1,3 @@
-import React from "react";
 import Carousel from "nuka-carousel";
 
 const Projects = () => {
@@ -13,11 +12,11 @@ const Projects = () => {
     },
     {
       title: "Design",
-      role: "Designing and implementing new UI features for web and mobile apps",
+      role: "Designing and implementing new UI features for responsive web apps",
     },
     {
       title: "Testing",
-      role: "Writing and executing test scripts for web and mobile apps",
+      role: "Writing and executing test scripts for web apps",
     },
   ];
   return (
