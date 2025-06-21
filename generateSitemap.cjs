@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const generateSitemap = async () => {
   // Set your website URL
-  const baseURL = 'https://teja-portfolio-2023.netlify.app/';
+  const baseURL = 'https://www.tejasaie.com/';
 
   // Set the output path for the sitemap file
   const outputPath = './public/sitemap.xml';
